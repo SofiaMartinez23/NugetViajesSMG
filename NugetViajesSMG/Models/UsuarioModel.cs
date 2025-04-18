@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
@@ -23,6 +23,9 @@ namespace NugetViajesSMG.Models
         public string Clave { get; set; }
 
         public string ConfirmarClave { get; set; }
+
         public string AvatarUrl { get; set; }
+
+        public DateTime FechaRefistro { get; set; }
     }
 }
