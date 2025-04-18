@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace NugetViajesSMG.Models
 {
-    [Table("VISTAUSUARIOCOMPLETO")] 
+    [Table("USUARIOS")] 
     public class UsuarioCompletoView
     {
         [Key]
@@ -34,5 +34,8 @@ namespace NugetViajesSMG.Models
 
         [Column("AVATARURL")]
         public string AvatarUrl { get; set; }
+
+        [Column("FECHADEREGISTRO")]
+        public DateTime FechaRefistro { get; set; }
     }
 }
